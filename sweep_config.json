@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "name": "baroque_sweep_Ltot",
+    "notes": "Barrido en SI (m). Variables: L_total y r1_longitud; r3_longitud se deduce (L_total - r1_longitud)."
+  },
+  "model": {
+    "temperature_C": 20.0,
+    "scan_steps": 50,
+    "L_min_frac": 0.70
+  },
+  "variables": {
+    "L_total":        { "start": 0.5,  "stop": 0.5,  "steps": 1 },
+    "r1_longitud":    { "start": 0.20,  "stop": 0.25,  "steps": 3 },
+    "r1_radio":       { "start": 0.017, "stop": 0.0019, "steps": 3 },
+    "radio_cono_final": { "start": 0.001, "stop": 0.0015, "steps": 5 },
+    "agujero_posicion": { "start": 0.015, "stop": 0.035, "steps": 6 },
+    "agujero_radio_in": { "start": 0.0080, "stop": 0.0150, "steps": 6 },
+    "agujero_radio_out": { "start": 0.0070, "stop": 0.010, "steps": 6 },
+    "agujero_largo":    { "start": 0.007, "stop": 0.012, "steps": 6 }
+  },
+  "objective": {
+    "weights": { "w_mag": 1.0, "w_var": 0.5, "w_max": 0.5, "w_miss": 50.0 }
+  },
+  "runtime": {
+    "output_dir": "batch_results",
+    "format": "parquet",
+    "save_curves": true,
+    "flush_every": 50,
+    "resume": true,
+    "n_jobs": 1,
+    "use_tqdm": true,
+    "progress_every": 50
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variables": {
+    "L_total":           [0.60, 1.20],
+    "r1_longitud":       [0.30, 0.70],
+    "r1_radio":          [0.010, 0.018],
+    "radio_cono_final":  [0.003, 0.010],
+    "agujero_posicion":  [0.010, 0.050],
+    "agujero_radio_in":  [0.003, 0.008],
+    "agujero_radio_out": [0.003, 0.008],
+    "agujero_largo":     [0.001, 0.006]
+  },
+  "fixed": {
+    "temperatura": 20.0
+  },
+  "weights": {
+    "w_mag": 1.0,
+    "w_var": 0.5,
+    "w_max": 0.5,
+    "w_miss": 50.0
+  }
+}

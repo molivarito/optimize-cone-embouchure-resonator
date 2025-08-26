@@ -1,0 +1,39 @@
+# Entornos virtuales
+venv/
+OpenWind/
+.env
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configuraciones de IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Directorios de salida de los exploradores y analizadores
+batch_results/
+bayes_results/
+bayes_results_fallback/
+analysis_out/
+
+# Archivos de salida generados por los scripts
+*.csv
+*.png
+*.log
+*.txt
+*.npy
+*.jsonl
+
+# Archivos de salida específicos (generados por los optimizadores)
+errores_optimizacion_flauta.txt
+best.json
+best_local.json
+META.json
+
+# Excepción: No ignorar el archivo de requisitos
+!requirements.txt

@@ -1,0 +1,52 @@
+{
+    "optimizer_settings": {
+        "name": "Differential Evolution",
+        "cost_weights": {
+            "oct": 1.0,
+            "duo": 1.0
+        }
+    },
+    "parameters": {
+        "largo_total": {
+            "mode": "fixed",
+            "value": 1.0
+        },
+        "r1_radio": {
+            "mode": "fixed",
+            "value": 0.015
+        },
+        "agujero_radio_in": {
+            "mode": "fixed",
+            "value": 0.005
+        },
+        "agujero_radio_out": {
+            "mode": "explore",
+            "values": [
+                0.005,
+                0.01
+            ]
+        },
+        "agujero_largo": {
+            "mode": "explore",
+            "values": [
+                0.002,
+                0.006,
+                0.01
+            ]
+        },
+        "longitud_r1": {
+            "mode": "optimize",
+            "bounds": [
+                0.1,
+                0.9
+            ]
+        },
+        "radio_cono_final": {
+            "mode": "optimize",
+            "bounds": [
+                0.001,
+                0.02
+            ]
+        }
+    }
+}
